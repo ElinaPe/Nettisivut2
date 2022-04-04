@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP verkkokauppa</title>
+    <link rel="icon" type="image/png" href="logot/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="nettyyli.css">
+    
+</head>
+    <div class="topnavresp" id="topnavresp">
+            <a href="/">Etusivu</a>
+            <a href="/tietoa.html">Tietoa</a>
+            <a href="/myy.html">Tuotteet</a>
+            <a href="/otayhteytta.html">Ota yhteyttä</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i></a>
+            <div class="header__actions">
+                <button class="header__checkout snipcart-checkout">
+                    <img src="logot/bag.png" height="20" alt="ostoskori logo">
+                    <span class="snipcart-total-price">€0.00</span>
+                </button>
+            </div>
+    </div>
+    <div class="container">
+
+        <h1>Käsintehdyt vaatteet perheen pienimmille</h1>
+
+        <img id="logo" src="logot/logo4.png" alt="sivuston logo">
+        <div class="topnavi">
+            <ul id="navback">
+                <li><a href="/">Etusivu</a></li>
+                <li><a href="/tietoa.html">Tietoa</a></li>
+                <li><a href="/myy.html">Tuotteet</a></li>
+                <li><a href="/otayhteytta.html">Ota yhteyttä</a></li>
+            </ul>
+            <div class="header__actions">
+                <button class="header__checkout snipcart-checkout">
+                    <img src="logot/bag.png" height="20" alt="ostoskori logo">
+                    <span class="snipcart-total-price">€0.00</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="product_container">
+            <a id="prodh2" href="/myy.html"><h2 id="header">Tuotteet</h2></a>
+
+            <div class="products">
+                <div class="prodtext">
+                    <a href="/pipotjapannat.html"><h2>Lämpöiset ja pehmeät pipot & pannat</h2></a>
+                    <p>Possimus voluptas itaque nulla molestias velit tempore beatae.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Ratione nam temporibus facilis. Sit recusandae impedit laudantium, suscipit voluptate eius nostrum quo aperiam.</p>
+                    <a href="/pipotjapannat.html">Osta täältä</a>
+                </div>
+                <div class="prodpic">
+                    <img id="beaniepic" src="tuotekuvat/ryppypipot.jpg" alt="pipoja">
+                    <div class="prodpic_overlay">
+                        <div class="image_title">Pipot ja pannat</div>
+                        <p class="image_description"> <a href="/pipotjapannat.html">Osta täältä</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products" id="reverse">
+                <div class="prodtext">
+                    <h2>Paidat ja tunikat</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas itaque nulla molestias velit tempore beatae. Ratione nam temporibus facilis. Sit recusandae impedit laudantium, suscipit voluptate eius nostrum quo aperiam.</p>
+                    <a href="/paidat.html">Osta täältä</a>
+                </div>
+                <div class="prodpic">
+                    <img id="shirtpic" src="tuotekuvat/juliapaita.jpg" alt="paita">
+                    <div class="prodpic_overlay">
+                        <div class="image_title">Paidat ja tunikat</div>
+                        <p class="image_description"> <a href="/paidat.html">Osta täältä</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media">
+        <div class="alanavi">
+            <a href="/otayhteytta.html">Ota yhteyttä</a>
+            <a href="/toimitusehdot.html">Toimitusehdot</a>
+            <a href="#tietosuojaseloste">Tietosuojaseloste</a>
+        </div>
+        
+        <div class="tiedot">
+                <p>EP - Elina Perkiö</p>
+                <p>Y-tunnus</p>
+                <p>Hillerinpolku 5A</p>
+                <p>18150 Heinola</p>
+                <p>elluuu_@hotmail.com</p>
+        </div>
+
+        <div class="seuraa">
+            <a href="https://www.facebook.com/elina.perkio"><img src="logot/logofacebook.png" alt="facebookin logo" title="EP:n facebook" width="30"></a>
+            <a href="https://www.instagram.com/prinsessajuttuja/"><img src="logot/logoinstagram.png" alt="instagramin logo" title="EP:n instagram" width="30"></a>
+            <a href="mailto:elluuu_@hotmail.com"><img src="logot/logoemail.png" alt="sähköpostin kuvake" title="Lähetä sähköpostia" width="30"></a>
+            
+        </div>
+
+        <div class="copyright">
+            <a href="/">©EP 2022</a>
+        </div>
+    </div>
+
+    
+    
+    <script async src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"></script>
+    <div hidden id="snipcart" 
+        data-api-key="NTAyOWQ3YmEtNGRkZi00YTlmLWE5NTktOGYyMGE5NzdjZTgwNjM3ODM3MjYxODY0NTMyODU3"
+        data-currency="eur"
+        data-config-modal-style="side"></div>
+    <script src="navijs.js"></script>
+</body>
+</html>

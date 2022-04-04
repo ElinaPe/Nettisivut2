@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Piilotettu navi*/
+.topnavresp {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(237, 244, 230, 0.957);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 5px;
+}
+
+.topnavresp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(217, 255, 209, 0.7);
+    z-index: -1;
+}
+  
+.topnavresp a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+  
+.topnavresp a:hover {
+    font-weight: bolder;
+    color: #000;
+}
+
+.topnavresp .icon {
+    display: none;
+}
+
+
+/*navi alkaa*/
+
+.navcon {
+    width: 100%;
+}
+
+.topnavi {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-image: url('turkoosi.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+
+#navback {
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient( #021802c9, #12811225);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+ul {
+    margin: 0;
+}
+
+.topnavi a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.topnavi a:hover {
+    background: #fd7159c9;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+li {
+    padding: 7px;
+}
+
+/*ostoskori*/
+
+.header__actions{
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+.topnavi.active .header__actions {
+    top: 5px;
+    right: 5px;
+}
+
+.header__checkout{
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background:local;
+    background-color: #ffffffd1;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.topnavi.active .header__checkout{
+    background: #0dcaf086;
+}
+
+.header__checkout:hover, .topnavi.active .header__checkout:hover {
+    background-color: #fd7159c9;
+}
+
+.snipcart-total-price {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* Tuote */
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* navigointiteksti*/
+.goBack {
+    display: flex;
+}
+.goback {
+    color: #64686c;
+    text-decoration: none;
+}
+.goback:hover {
+    color: #0dcaf0;
+}
+
+.single_product {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.product-description span {
+    font-size: 18px;
+    color: #0dcaf0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6b757e;
+    line-height: 24px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+/* ostoskori LISÄÄ */
+
+.buy-button {
+    border: none;
+    padding: 15px;
+    background-color: #E1E8EE;
+    color: #43484D;
+    border-radius: 20px;
+}
+.buy-button:hover {
+    background-color: #0dcaf086;
+}
+
+
+
+/*footer*/
+.media {
+    width: 100%;
+    background-color: #64e6f791;
+    border-top: 1px solid #4F8A8B;
+    border-bottom: 1px solid #4F8A8B;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 80px;
+}
+
+.alanavi a {
+    margin-bottom: 10px;
+}
+
+.media a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.media a:hover {
+    font-weight: bold;
+}
+
+.alanavi, .tiedot, .seuraa {
+    display: flex;
+    flex-direction: column;
+    padding: 5;
+}
+
+.tiedot p {
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.seuraa {
+    border-left: 2px solid #4f8a8b2d;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.copyright a {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnavi {
+        display: none;
+    }
+
+    .topnavi  {
+        display: none;
+    }
+
+    .topnavresp a:not(:first-child) {
+        display: none;
+    }
+
+    .topnavresp {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    .topnavresp .header__actions{
+        display: none;
+    }
+    
+    .topnavresp a.icon {
+        float: right;
+        display: block;
+    }
+  
+    .topnavresp.responsive {
+        position: fixed;
+        width: 100%;
+    }
+
+    .topnavresp.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    }
+
+    .topnavresp.responsive .header__actions {
+        display: flex;
+    }
+    
+    .topnavresp.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    padding: 8px;
+    }
+
+    .prod_container {
+    top:50px;
+    }
+
+    .goback {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .media {
+        flex-direction: column;
+    }
+
+    .alanavi a {
+        margin: 0;
+    }
+
+    .alanavi, .tiedot {
+        align-items: center;
+    }
+
+    .tiedot p {
+        padding: 0;
+    }
+
+    .seuraa {
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .media {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    .copyright {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

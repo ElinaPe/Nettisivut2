@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Piilotettu navi*/
+.topnavresp {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('turkoosi.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 5px;
+}
+.topnavresp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(238, 255, 235, 0.7);
+    z-index: -1;
+}
+  
+.topnavresp a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+  
+.topnavresp a:hover {
+    font-weight: bolder;
+    color: #000;
+    
+}
+
+.topnavresp .icon {
+    display: none;
+}
+
+.topnavresp .header__actions {
+    display: none;
+}
+
+/*navi alkaa*/
+
+.topnavi {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-image: url('turkoosi.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+}
+
+.topnavi.active {
+    box-shadow: 0 2px 10px rgba(59, 71, 64, 0.3);
+    height: 56px;
+}
+
+.topnavi.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 255, 209, 0.7);
+    z-index: -1;
+}
+.topnavi.active a {
+    color: #000;
+}
+
+#navback {
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient( #021802c9, #12811225);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.topnavi.active #navback{
+    background-image: none;
+    padding: 3px;
+}
+
+ul {
+    margin: 0;
+}
+
+.topnavi a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.topnavi a:hover {
+    background: #fd7159c9;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+.topnavi.active a:hover {
+    background: none;
+    color: #000;
+    font-weight: bold;
+}
+
+li {
+    padding: 7px;
+}
+
+/*ostoskori*/
+
+.header__actions{
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+.topnavi.active .header__actions {
+    top: 5px;
+    right: 5px;
+}
+
+.header__checkout{
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background:local;
+    background-color: #ffffffd8;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.topnavi.active .header__checkout{
+    background: #0dcaf086;
+}
+
+.header__checkout:hover, .topnavi.active .header__checkout:hover {
+    background-color: #fd7159c9;
+}
+
+.snipcart-total-price {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+/*Tekstinavi*/
+
+.goBack {
+    display: flex;
+}
+.goback {
+    color: #979ea5;
+    text-decoration: none;
+}
+.goback:hover {
+    color: #0dcaf0;
+}
+
+/* Tuotteet*/ 
+
+.prod_container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
+}
+
+
+.product_headers{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    color: #46342a;
+}
+
+.product_headers:hover {
+    color: #fd7159;
+}
+
+h1 {
+    font-size: 40px;;
+    margin: 30px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #46342a;
+    animation-name: down;
+    animation-duration: 2s;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    padding: 5px;
+    color: #46342a;
+}
+
+.row  {
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 4px 4px 7px #d3d6d0;
+}
+
+.prod_pic {
+    max-width: 250px;
+    height: fit-content;
+}
+
+/* Zoom ym */
+
+.col-lg-3 {
+    transition: transform .3s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.col-lg-3:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    background-color: #fff;
+}
+
+.col-lg-4 {
+    transition: transform .3s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.col-lg-4:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    background-color: #fff;
+}
+
+/* Tilaa väleihin*/
+.beanies, .bands, .shirts {
+    margin-bottom: 50px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+
+
+h4 {
+    text-align: center;
+    margin: 5px;
+}
+h4:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*footer*/
+.media {
+    width: 100%;
+    background-color: #64e6f791;
+    border-top: 1px solid #4F8A8B;
+    border-bottom: 1px solid #4F8A8B;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 80px;
+}
+
+.alanavi a {
+    margin-bottom: 10px;
+}
+
+.media a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.media a:hover {
+    font-weight: bold;
+}
+
+.alanavi, .tiedot, .seuraa {
+    display: flex;
+    flex-direction: column;
+    padding: 5;
+}
+
+.tiedot p {
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.seuraa {
+    border-left: 2px solid #4f8a8b2d;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.copyright a {
+    font-size: 14px;
+}
+
+
+@keyframes down {
+    0%   { 
+        top: -10px;
+    }
+    100% { 
+        top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .prod_container{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnavi {
+        display: none;
+    }
+
+    .topnavresp a:not(:first-child) {
+        display: none;
+    }
+
+    .topnavresp {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+    .topnavresp a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnavresp.responsive {
+        position: fixed;
+        width: 100%;
+    }
+
+    .topnavresp.responsive::before {
+        height: 100%;
+    }
+
+    .topnavresp.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+    }
+    
+    .topnavresp.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    .topnavresp.responsive .header__actions {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -10px;
+    }
+
+    .prod_container {
+        top: 50px;
+    }
+    .goback {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .media {
+        flex-direction: column;
+    }
+
+    .alanavi a {
+        margin: 0;
+    }
+
+    .alanavi, .tiedot {
+        align-items: center;
+    }
+
+    .tiedot p {
+        padding: 0;
+    }
+
+    .seuraa {
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .media {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    .copyright {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
