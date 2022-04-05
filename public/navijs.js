@@ -1,5 +1,3 @@
-
-
 const nav = document.querySelector('.topnavi')
 window.addEventListener('scroll', fixNav)
 
@@ -13,7 +11,7 @@ function fixNav() {
 
 
 function responsiveNav() {
-    var x = document.getElementById("topnavresp");
+    let x = document.getElementById("topnavresp");
     if (x.className === "topnavresp") {
         x.className += " responsive";
     } else {
