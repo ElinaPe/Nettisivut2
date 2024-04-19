@@ -299,7 +299,9 @@ li {
 
 /*footer*/
 .media {
-    background-color: #64e6f791;
+    /* background-color: #64e6f791; */
+    /* background: linear-gradient(to bottom, #64e6f7, #0e464e); */
+    background-color: red;
     border-top: 1px solid #4F8A8B;
     border-bottom: 1px solid #4F8A8B;
     padding: 20px;
